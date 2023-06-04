@@ -1,16 +1,12 @@
-nums = [1, 2, 1, 4, 3, 12]
-def find_the_duplicate(nums):
+original = [1, 2, 1, 4, 3, 12]
+def find_the_duplicate(original):
     dupes = []
-    freq = nums.count(nums)
-    for num in nums:
-        if freq >= 1:
-            dupes.append(num)
-            return dupes
-        else:
-            return "None"
+    x = 0
+    freq = original.count(x)
+    [dupes.append(n) for n in original if freq > 1]
+    return(dupes)
 
-
-print(find_the_duplicate(nums))
+print(find_the_duplicate(original))
     # """Find duplicate number in nums.
     #
     # Given a list of nums with, at most, one duplicate, return the duplicate.
