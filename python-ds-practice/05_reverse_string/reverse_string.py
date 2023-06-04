@@ -4,4 +4,4 @@ def reverse_string(x):
 
 
 phrase = input("Your catchphrase: ")
-print(f"{reverse_string(phrase)} :esarhphctac ruoY")
+print(f"{reverse_string(phrase)} :deppilf esarhphctac ruoY")

@@ -1,10 +1,5 @@
+# Complete!
 # Return frequency of term in list
-# make list
-# iterate over each term
-# store item and frequency in dictionary
-# get search term from user
-# get item from dictionary
-import collections
 def frequency(lst, search_term):
     x = lst.count(search_term)
     return x

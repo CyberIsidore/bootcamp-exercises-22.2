@@ -1,4 +1,4 @@
-# Complete and Working!
+# Complete!
 a = int(input("Feed me an integer! "))
 b = int(input("Another! "))
 def product(a, b):

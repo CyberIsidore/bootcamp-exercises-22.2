@@ -11,8 +11,8 @@ def number_compare(a, b):
 a = int(input("""
 Let's compare numbers. 
 Please give me two integers!
->"""))
+~"""))
 b = int(input("""
 One more, please!
->"""))
+~"""))
 print(number_compare(a, b))

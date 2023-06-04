@@ -5,7 +5,7 @@ def is_palindrome(x):
 
 phrase = input("""
 I can check for a palindrome!
-Enter a phrase: """).lower().replace(" ", "")
+Enter your phrase: """).lower().replace(" ", "")
 if phrase == is_palindrome(phrase):
     print("Yep, it's a palindrome.")
 else:
