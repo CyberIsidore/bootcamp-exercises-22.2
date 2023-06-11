@@ -1,6 +1,7 @@
+# Complete!
 def compact(lst):
-    """Return a copy of lst with non-true elements removed.
+    return list(filter(bool,lst))
 
-        >>> compact([0, 1, 2, '', [], False, (), None, 'All done'])
-        [1, 2, 'All done']
-    """
+
+lst = [0, 1, 2, '', [], False, (), None, 'All done']
+print(compact(lst))
