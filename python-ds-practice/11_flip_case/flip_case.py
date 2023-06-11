@@ -1,13 +1,7 @@
+# Complete!
 def flip_case(phrase, to_swap):
     if to_swap in phrase:
-        for char in phrase:
-            flip_phrase = ""
-            if char == to_swap:
-                char.swapcase()
-                flip_phrase += char
-            else:
-                flip_phrase += char
-        return flip_phrase
+        return "".join([x.swapcase() if x == to_swap else x for x in phrase ]).strip(" ")
     else:
         return "That character isn't in your phrase!"
 
@@ -26,6 +20,6 @@ def flip_case(phrase, to_swap):
     # """
 phrase = input("Say something! ")
 print(f'You said: "{phrase}"')
-to_swap = input("What letter should we flip? ")
+to_swap = input("What letter should we flip? ").casefold()
 
 print(flip_case(phrase, to_swap))
