@@ -1,7 +1,7 @@
 # Complete!
 def flip_case(phrase, to_swap):
     if to_swap in phrase:
-        return "".join([x.swapcase() if x == to_swap else x for x in phrase ]).strip(" ")
+        return "".join([x.swapcase() if x == to_swap else x for x in phrase]).strip(" ")
     else:
         return "That character isn't in your phrase!"
 
