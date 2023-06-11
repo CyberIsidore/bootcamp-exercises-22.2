@@ -1,9 +1,13 @@
-def list_check(lst):
-    """Are all items in lst a list?
+def list_check(lst_lite):
+    result = ""
+    for x in lst_lite:
+        if isinstance(x, list) is True:
+            result = "True"
+        else:
+            result = "False"
+    return result
 
-        >>> list_check([[1], [2, 3]])
-        True
 
-        >>> list_check([[1], "nope"])
-        False
-    """
+lst = ([[1], [2, 3]])
+lst_lite = ([[1], "nope"])
+print(list_check(lst))
