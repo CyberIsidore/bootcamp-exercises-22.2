@@ -1,13 +1,15 @@
+# Complete!
 def mode(nums):
-    """Return most-common number in list.
+    counter = 0
+    num = nums[0]
+    for i in nums:
+        freq = nums.count(i)
+        if(freq > counter):
+            counter = freq
+            num = i
+    return num
+    # return [x for x in nums if max(nums.count(x))]
 
-    For this function, there will always be a single-most-common value;
-    you do not need to worry about handling cases where more than one item
-    occurs the same number of times.
 
-        >>> mode([1, 2, 1])
-        1
-
-        >>> mode([2, 2, 3, 3, 2])
-        2
-    """
+nums = [1, 2, 4, 5, 2, 6, 7, 8, 2, 3, 4, 2]
+print(mode(nums))
